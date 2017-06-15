@@ -1,0 +1,16 @@
+//
+// Override global variable for portal components
+//
+
+// Default font icon family
+$portal-font-family-icons: "font-iparc";
+$portal-font-family: $font-family-md-base;
+
+// @default colors
+
+// Primaries
+$portal-color-primary: color($colors, primary);
+$portal-color-secondary: color($colors, secondary);
+
+// others ...
+$portal-color-red: color($colors, secondary);

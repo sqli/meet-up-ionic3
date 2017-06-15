@@ -1,0 +1,107 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+
+// Global path variables
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+// Override ion-app default styles
+$font-family-md-base: "Lato", sans-serif;
+$font-size-base: 18px;
+
+// @card : http://ionicframework.com/docs/components/#cards
+$card-ios-font-size: inherit;
+$card-md-font-size: inherit;
+$card-wp-font-size: inherit;
+
+// @splitPane : http://ionicframework.com/docs/api/components/split-pane/SplitPane/#sass-variables
+$split-pane-md-border: none;
+$split-pane-ios-border: none;
+$split-pane-wp-border: none;
+
+$split-pane-md-side-min-width: 0;
+$split-pane-side-max-width: auto;
+$split-pane-side-min-width: 0;
+
+// Searchbar
+$searchbar-md-padding: 0;
+$searchbar-md-background-color: none;
+$searchbar-md-input-box-shadow: none;
+$searchbar-md-input-placeholder-color: #14508c;
+$searchbar-md-input-text-color: #2f3234;
+$searchbar-md-input-border-radius: 0;
+$searchbar-md-input-search-icon-size: 32px;
+$searchbar-md-input-clear-icon-size: 25px;
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary: #0064A0,
+  secondary: #00ABC4,
+  danger: #e10600,
+  light: #f2f2f2,
+  dark: #222,
+  white: #fff,
+  black: #000,
+  text: #4c4c4c,
+  text-dark: #2f3234
+);
+
+// @global
+$text-color: color($colors, text);
+$background-color: color($colors, light);
+$list-background-color: color($colors, white);
+
+// @card
+$card-md-text-color: $text-color;
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionic.ionicons";
+
+// Fonts
+// --------------------------------------------------
+
+//@import "roboto";
+//@import "noto-sans";

@@ -1,0 +1,5 @@
+<h2 *ngIf="title" class="search-group-title">{{title}}</h2>
+<form role="form" class="search-group-form" (submit)="searchGroupSubmit($event, searchBar.value)">
+  <ion-searchbar (ionChange)="onChange()" class="search-group-bar" [placeholder]="placeholder"></ion-searchbar>
+  <button ion-button clear type="submit" class="search-group-submit"><span class="iparc-icon-search"></span></button>
+</form>

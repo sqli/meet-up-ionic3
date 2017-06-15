@@ -1,0 +1,13 @@
+{
+  "PAGE_TITLE": {
+    "LOGIN": "Login page"
+  },
+  "LABEL": {
+    "USERNAME": "Username",
+    "PASSWORD": "Password"
+  },
+  "ERROR": {
+    "A500": "Unknown error",
+    "F0001": "Error 1"
+  }
+}

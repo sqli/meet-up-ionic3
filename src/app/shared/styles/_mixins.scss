@@ -1,0 +1,85 @@
+/// https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+          eot: "?",
+          svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+          otf: "opentype",
+          ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@mixin make-span-padding($i, $position) {
+  .span-padding-#{$position}-#{$i} {
+    padding-#{$position}: #{$i}rem;
+  }
+}
+
+// =============================================================================
+// Génère les différentes image pour afficher la validité des services
+// =============================================================================
+@mixin make-icon-validite($nom1,$color1,$nom2,$color2) {
+  .isup-cap-validite-#{$nom1}-#{$nom2} {
+    color: #FFF;
+    background: linear-gradient(90deg, #{$color1} 0%, #{$color1} 50%, #{$color2} 51%, #{$color2} 100%);
+    border-radius: 1.5rem;
+    display: inline-block;
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin placeholder() {
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    padding-left: 16px;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    padding-left: 16px;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    padding-left: 16px;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    padding-left: 16px;
+  }
+}

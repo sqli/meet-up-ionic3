@@ -1,0 +1,50 @@
+// Override style for Ionic Searchbar component
+.searchbar {
+  $searchbar:&;
+
+  // add background gradient-color
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(to right, rgba(color($colors, primary), 1) 0%, rgba(color($colors, secondary), 1) 100%);
+  }
+
+  // remove left padding
+  &-input,
+  &-md &-input {
+    padding-left: 0px;
+    font-size: 24px;
+
+    &::-webkit-input-placeholder {
+      font-weight: 300;
+      font-style: italic;
+    }
+    &::-moz-placeholder {
+      font-weight: 300;
+      font-style: italic;
+    }
+    &:-ms-input-placeholder {
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+
+  // move search icon to the right
+  &-md &-search-icon {
+    left: auto;
+    right: 16px;
+    top: 50%;
+
+    margin-top: -$searchbar-md-input-search-icon-size/2;
+  }
+
+  // hide search-icon if cross-icon is visible
+  &-has-value#{$searchbar}-has-focus &-search-icon {
+    display: none;
+  }
+}

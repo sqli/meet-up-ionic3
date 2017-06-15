@@ -1,0 +1,92 @@
+.search-group {
+  $search-group: &;
+
+  display: block;
+
+  max-width: 980px; // TODO consider using a global variable if the size is reused
+  margin: 0 auto;
+  padding: 50px 20px;
+
+  &-title {
+    display: block;
+    margin: 0 0 10px 0;
+
+    color: color($colors, text-dark);
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &-form {
+    position: relative;
+  }
+
+  &-submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    margin: 0;
+    padding: 1px;
+
+    height: 100%;
+
+    background: none;
+    border: none;
+
+    font-size: $searchbar-md-input-search-icon-size;
+    color: color($colors, primary);
+
+    #{$search-group}--noresults & {
+      display: none;
+    }
+  }
+
+  .searchbar {
+
+    // Hide search-icon
+    &-search-icon {
+      display: none;
+    }
+
+    &-clear-icon {
+      right: 0;
+
+      background: none;
+
+      .button-inner:before {
+        content: '#{$iparc-icon-cross}';
+        display: block;
+
+
+        font-family: "font-iparc";
+        font-size: $searchbar-md-input-clear-icon-size;
+      }
+    }
+
+  }
+
+  &:not(&--noresults) .searchbar {
+    &-clear-icon {
+      display: none;
+    }
+  }
+
+  &--noresults .searchbar {
+    &-clear-icon {
+      display: block;
+    }
+  }
+
+
+
+  // Display message when there is no result todo move to another component ?
+  &-error {
+    margin: 0;
+    padding: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: color($colors, danger);
+  }
+}

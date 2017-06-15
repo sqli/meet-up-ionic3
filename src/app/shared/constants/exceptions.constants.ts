@@ -1,0 +1,8 @@
+export const ExceptionsConstants = {
+    RULES_ERROR: 'RULES_ERROR',
+    BUS_ERROR: 'BUS_ERROR',
+    VALIDATION_ERROR: 'VALIDATION_ERROR',
+    TECH_ERROR: 'TECH_ERROR',
+    UNDEFINED: 'UNDEFINED',
+    REPO_ERROR: 'REPO_ERROR'
+};

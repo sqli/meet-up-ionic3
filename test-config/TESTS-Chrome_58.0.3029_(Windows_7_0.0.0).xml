@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 58.0.3029 (Windows 7 0.0.0)" package="" timestamp="2017-05-26T08:38:36" id="0" hostname="ZE0PW03A" tests="18" errors="0" failures="0" time="1.86">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"/>
+  </properties>
+  <testcase name="MyApp Component should be created" time="0.745" classname="Chrome_58_0_3029_(Windows_7_0_0_0).MyApp Component"/>
+  <testcase name="Test Config service :  should load applicative config" time="0.033" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test Config service : "/>
+  <testcase name="Test service search catalogue load correct search tab" time="0" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test service search catalogue"/>
+  <testcase name="Test GestionParc service :  should load synthese prm" time="0.672" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test GestionParc service : "/>
+  <testcase name="Test GestionParc service :  should load comptage prm" time="0.035" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test GestionParc service : "/>
+  <testcase name="Test GestionParc service :  should load installation client prm" time="0.025" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test GestionParc service : "/>
+  <testcase name="Test GestionParc service :  should load communication prm" time="0.018" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test GestionParc service : "/>
+  <testcase name="Test service BoxService fillBoxDetail list" time="0.001" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test service BoxService"/>
+  <testcase name="Test service BoxService fillBoxDetail" time="0.003" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test service BoxService"/>
+  <testcase name="Test DetailPrmService :  should load compteur box detail with merged values" time="0.034" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test DetailPrmService : "/>
+  <testcase name="Test DetailPrmService :  should load compteur box detail with merged values from cache" time="0.133" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test DetailPrmService : "/>
+  <testcase name="Test DetailPrmService :  should load armoire box detail with merged values" time="0.032" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test DetailPrmService : "/>
+  <testcase name="Test DetailPrmService :  should get an error" time="0.017" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test DetailPrmService : "/>
+  <testcase name="Pipe: JsonKeysPipe Transforme un json en tableau" time="0.002" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Pipe: JsonKeysPipe"/>
+  <testcase name="Pipe: MomentPipe Transforme un timestamp en date" time="0" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Pipe: MomentPipe"/>
+  <testcase name="Test StorageService :  should set and get a value in Storage" time="0.048" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test StorageService : "/>
+  <testcase name="Test StorageService :  should set and not get a value because of ttl" time="0.049" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test StorageService : "/>
+  <testcase name="Test CryptoService :  should encrypt/decrypt AES" time="0.013" classname="Chrome_58_0_3029_(Windows_7_0_0_0).Test CryptoService : "/>
+  <system-out>
+    <![CDATA[Chrome 58.0.3029 (Windows 7 0.0.0) WARN: 'asmCrypto seems to be load from an insecure origin; this may cause to MitM-attack vulnerability. Consider using secure transport protocol.'
+,Chrome 58.0.3029 (Windows 7 0.0.0) WARN: 'asmCrypto PRNG not seeded; your security relies on your system PRNG. If this is not acceptable, use asmCrypto.random.seed().'
+,Chrome 58.0.3029 (Windows 7 0.0.0) WARN: 'asmCrypto PRNG not seeded; your security relies on your system PRNG. If this is not acceptable, use asmCrypto.random.seed().'
+,Chrome 58.0.3029 (Windows 7 0.0.0) LOG: Object{boxName: 'compteur', expandable: false, expanded: false, title: 'Compteur', fields: [Object{fieldName: ..., index: ..., part: ..., visibleInCollapseMode: ..., label: ..., value: ...}, Object{fieldName: ..., index: ..., part: ..., visibleInCollapseMode: ..., label: ..., formater: ..., value: ...}, Object{fieldName: ..., index: ..., part: ..., visibleInCollapseMode: ..., label: ..., formater: ..., value: ...}]}
+,Chrome 58.0.3029 (Windows 7 0.0.0) WARN: 'asmCrypto PRNG not seeded; your security relies on your system PRNG. If this is not acceptable, use asmCrypto.random.seed().'
+,Chrome 58.0.3029 (Windows 7 0.0.0) WARN: 'asmCrypto PRNG not seeded; your security relies on your system PRNG. If this is not acceptable, use asmCrypto.random.seed().'
+,Chrome 58.0.3029 (Windows 7 0.0.0) WARN: 'asmCrypto PRNG not seeded; your security relies on your system PRNG. If this is not acceptable, use asmCrypto.random.seed().'
+,Chrome 58.0.3029 (Windows 7 0.0.0) WARN: 'asmCrypto PRNG not seeded; your security relies on your system PRNG. If this is not acceptable, use asmCrypto.random.seed().'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

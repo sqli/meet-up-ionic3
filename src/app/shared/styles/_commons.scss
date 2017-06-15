@@ -1,0 +1,19 @@
+// @import fonts
+@import "fonts/font-face";
+
+// Define common style for the application
+body {
+  color: $text-color;
+  user-select: text !important
+}
+
+// Set proper value for .aside flex
+// TODO: move to component if possible
+.split-pane-side.aside {
+  flex: inherit;
+}
+
+// Override background on Aside .menu-inner TODO: move to component if possible
+.aside .menu-inner {
+  background: none;
+}

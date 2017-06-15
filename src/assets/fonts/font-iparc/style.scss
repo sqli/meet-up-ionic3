@@ -1,0 +1,179 @@
+@import "variables";
+
+@font-face {
+  font-family: 'font-iparc';
+  src:  url('#{$icomoon-font-path}/font-iparc.eot?8ao3go');
+  src:  url('#{$icomoon-font-path}/font-iparc.eot?8ao3go#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/font-iparc.ttf?8ao3go') format('truetype'),
+    url('#{$icomoon-font-path}/font-iparc.woff?8ao3go') format('woff'),
+    url('#{$icomoon-font-path}/font-iparc.svg?8ao3go#font-iparc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="iparc-icon-"], [class*=" iparc-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'font-iparc' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iparc-icon-antenna {
+  &:before {
+    content: $iparc-icon-antenna;
+  }
+}
+.iparc-icon-modem {
+  &:before {
+    content: $iparc-icon-modem;
+  }
+}
+.iparc-icon-post_client {
+  &:before {
+    content: $iparc-icon-post_client;
+  }
+}
+.iparc-icon-simcard {
+  &:before {
+    content: $iparc-icon-simcard;
+  }
+}
+.iparc-icon-user {
+  &:before {
+    content: $iparc-icon-user;
+  }
+}
+.iparc-icon-toolbox {
+  &:before {
+    content: $iparc-icon-toolbox;
+  }
+}
+.iparc-icon-catalog {
+  &:before {
+    content: $iparc-icon-catalog;
+  }
+}
+.iparc-icon-ic_france {
+  &:before {
+    content: $iparc-icon-ic_france;
+  }
+}
+.iparc-icon-ic_tc {
+  &:before {
+    content: $iparc-icon-ic_tc;
+  }
+}
+.iparc-icon-ic_fiche-idc {
+  &:before {
+    content: $iparc-icon-ic_fiche-idc;
+  }
+}
+.iparc-icon-arrow-down {
+  &:before {
+    content: $iparc-icon-arrow-down;
+  }
+}
+.iparc-icon-arrow-left {
+  &:before {
+    content: $iparc-icon-arrow-left;
+  }
+}
+.iparc-icon-arrow-right {
+  &:before {
+    content: $iparc-icon-arrow-right;
+  }
+}
+.iparc-icon-arrow-up {
+  &:before {
+    content: $iparc-icon-arrow-up;
+  }
+}
+.iparc-icon-ic_schema {
+  &:before {
+    content: $iparc-icon-ic_schema;
+  }
+}
+.iparc-icon-ic_liste {
+  &:before {
+    content: $iparc-icon-ic_liste;
+  }
+}
+.iparc-icon-grid {
+  &:before {
+    content: $iparc-icon-grid;
+  }
+}
+.iparc-icon-commentaire {
+  &:before {
+    content: $iparc-icon-commentaire;
+  }
+}
+.iparc-icon-help {
+  &:before {
+    content: $iparc-icon-help;
+  }
+}
+.iparc-icon-configuration {
+  &:before {
+    content: $iparc-icon-configuration;
+  }
+}
+.iparc-icon-connectivite {
+  &:before {
+    content: $iparc-icon-connectivite;
+  }
+}
+.iparc-icon-accounting {
+  &:before {
+    content: $iparc-icon-accounting;
+  }
+}
+.iparc-icon-cross {
+  &:before {
+    content: $iparc-icon-cross;
+  }
+}
+.iparc-icon-electric_cabinet {
+  &:before {
+    content: $iparc-icon-electric_cabinet;
+  }
+}
+.iparc-icon-faq {
+  &:before {
+    content: $iparc-icon-faq;
+  }
+}
+.iparc-icon-historique {
+  &:before {
+    content: $iparc-icon-historique;
+  }
+}
+.iparc-icon-menu-more {
+  &:before {
+    content: $iparc-icon-menu-more;
+  }
+}
+.iparc-icon-notif {
+  &:before {
+    content: $iparc-icon-notif;
+  }
+}
+.iparc-icon-search {
+  &:before {
+    content: $iparc-icon-search;
+  }
+}
+.iparc-icon-trash {
+  &:before {
+    content: $iparc-icon-trash;
+  }
+}
+

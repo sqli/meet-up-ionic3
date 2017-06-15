@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-card>
+    <ion-toolbar>
+      <ion-title>Connexion</ion-title>
+    </ion-toolbar>
+    <ion-card-content>
+      <form role="form" (submit)="doLogin($event, username.value, password.value)">
+        <ion-item>
+          <ion-label stacked>Saisir identifiant</ion-label>
+          <ion-input #username id="username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Saisir mot de passe</ion-label>
+          <ion-input type="password" #password id="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <button ion-button color="primary" type="submit" block>Valider</button>
+        </ion-item>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
